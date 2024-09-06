@@ -1,93 +1,251 @@
-/* Basic reset */
-* {
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f6f8; /* Light gray for a modern look */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h1 {
-    margin-left: 20px;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
+a {
     text-decoration: none;
+    color: #007bff; /* Vibrant blue for links */
 }
 
-section {
-    padding: 20px;
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
 }
 
 .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #031222; /* Dark gray for header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Center align text inside header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Center-align the h1 heading and navigation */
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 20px; /* Add space below the heading */
+}
+
+nav .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #333;
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the list items */
+    gap: 30px; /* Space between navigation items */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
     color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Blue hover effect */
+}
+
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #0f151b, #00c6ff); /* Bold blue gradient */
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home .btn {
+    background: #fff;
+    color: #007bff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+    border: 2px solid #007bff;
+}
+
+#home .btn:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 80px 0;
+    background: #fff;
+}
+
+#portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #007bff; /* Vibrant blue for section heading */
+}
+
+.portfolio-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-item img {
     width: 100%;
     height: auto;
+}
+
+.portfolio-item h3 {
+    font-size: 24px;
+    margin: 20px;
+    color: #333;
+}
+
+.portfolio-item p {
+    margin: 0 20px 20px;
+}
+
+.portfolio-item a {
     display: block;
+    text-align: center;
+    padding: 15px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background 0.3s;
+    border: 2px solid #007bff;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.portfolio-item a:hover {
+    background: #0056b3;
+    border-color: #0056b3;
 }
 
-form label {
-    margin-top: 10px;
+/* About Section */
+#about {
+    background: #f4f6f8; /* Matches the body background for consistency */
+    padding: 80px 0;
 }
 
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff; /* Vibrant blue for section heading */
 }
 
-form button {
-    margin-top: 10px;
-    padding: 10px;
-    background: #333;
+#about p {
+    text-align: center;
+    font-size: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Section */
+#contact {
+    background: #fff;
+    padding: 80px 0;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff; /* Vibrant blue for section heading */
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+#contact button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
