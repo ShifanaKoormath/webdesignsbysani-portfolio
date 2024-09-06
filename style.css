@@ -191,7 +191,7 @@ nav ul li a:hover {
 /* Contact Section */
 #contact {
     background: #fff;
-    padding: 80px 0;
+    padding: 80px 20px; /* Adjusted padding for better spacing */
 }
 
 #contact h2 {
@@ -203,7 +203,7 @@ nav ul li a:hover {
 
 #contact form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the form */
 }
 
 #contact label {
@@ -237,6 +237,32 @@ nav ul li a:hover {
 #contact button:hover {
     background: #0056b3;
 }
+
+/* Social Links Section */
+.social-links {
+    margin-top: 40px; /* Adjust spacing above social links */
+    text-align: center; /* Center-align the social links */
+}
+
+.social-links p {
+    font-size: 18px;
+    color: #333;
+    margin: 0; /* Remove default margin */
+}
+
+.social-links a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px; /* Space between links */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
 
 /* Footer */
 footer {
